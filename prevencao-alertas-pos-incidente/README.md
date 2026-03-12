@@ -29,33 +29,29 @@ Supressão: Por user por 15 minutos
 Severidade: Média
 
 Resultado do disparo
-**Busca do alerta SSH:** consulta que identifica tentativas de força bruta.
+**Busca do alerta SSH: consulta que identifica tentativas de força bruta.**
 
-Busca do alerta SSH
+
 ![](assets/ssh-busca-resultados.jpg)
 
-**Configuração do alerta SSH:** parâmetros e threshold definidos.
+**Configuração do alerta SSH: parâmetros e threshold definidos.**
 
-Configuração do alerta SSH
+
 ![](assets/ssh-config.jpg)
 
-<<<<<<< HEAD
-Imagem: ssh lista ativos
-https://assets/ssh-lista-ativos.jpg
-**Alerta SSH disparado:** momento em que o alerta foi acionado.
-=======
 
-Lista de alertas SSH ativos
+ **ssh lista ativos**
+
 ![](assets/ssh-lista-ativos.jpg)
 
->>>>>>> a46607d486072d35933f57832b0893dd3f178f83
 
-Alerta SSH disparado
+
+**Alerta SSH disparado**
 ![](assets/ssh-disparado.jpg)
 
-**Resultados do alerta SSH:** detalhes das tentativas detectadas.
+**Resultados do alerta SSH: detalhes das tentativas detectadas.**
 
-Resultados do alerta SSH
+
 ![](assets/ssh-resultados-disparo.jpg)
 
 
@@ -80,30 +76,30 @@ Supressão: Por 15 minutos
 
 Severidade: Alta
 
-Resultado do disparo
-**Busca do alerta SQL:** consulta que identifica possíveis injeções SQL.
 
-Busca do alerta SQL
+**Busca do alerta SQL: consulta que identifica possíveis injeções SQL.**
+
+
 ![](assets/sql-busca-resultados.jpg)
 
-**Configuração do alerta SQL:** parâmetros e palavras-chave monitoradas.
+**Configuração do alerta SQL: parâmetros e palavras-chave monitoradas.**
 
-Configuração do alerta SQL
+
 ![](assets/sql-config.jpg)
 
-**Lista completa de alertas:** visão geral de todos os alertas configurados.
+**Lista completa de alertas: visão geral de todos os alertas configurados.**
 
-Lista completa de alertas
+
 ![](assets/alertas-lista-ativos-completa.jpg)
 
-**Alerta SQL disparado:** momento em que o alerta foi acionado.
+**Alerta SQL disparado: momento em que o alerta foi acionado.**
 
-Alerta SQL disparado
+
 ![](assets/sql-disparado.jpg)
 
-**Resultados do alerta SQL:** detalhes das tentativas de injeção.
+**Resultados do alerta SQL: detalhes das tentativas de injeção.**
 
-Resultados do alerta SQL
+
 ![](assets/sql-resultados-disparo.jpg)
 
 
@@ -127,25 +123,24 @@ Supressão: Por sourceType por 15 minutos
 
 Severidade: Crítica
 
-Resultado do disparo
-**Busca do alerta IOC:** consulta que identifica indicadores de comprometimento.
 
-Busca do alerta IOC
+**Busca do alerta IOC: consulta que identifica indicadores de comprometimento.**
+
+
 ![](assets/ioc-busca-resultados.jpg)
 
-**Configuração do alerta IOC:** parâmetros para detecção de IOCs.
+**Configuração do alerta IOC: parâmetros para detecção de IOCs.**
 
-Configuração do alerta IOC
+
 ![](assets/ioc-config.jpg)
 
-**Alerta IOC disparado:** momento em que o alerta foi acionado.
+**Alerta IOC disparado: momento em que o alerta foi acionado.** 
 
-Alerta IOC disparado
+
 ![](assets/ioc-disparado.jpg)
 
-**Resultados do alerta IOC:** detalhes dos IOCs detectados.
+**Resultados do alerta IOC: detalhes dos IOCs detectados.** 
 
-Resultados do alerta IOC
 ![](assets/ioc-resultados-disparo.jpg)
 
 
