@@ -31,8 +31,6 @@ Todas as regras foram adicionadas no arquivo `rules_custom.xml`:
   <description>Brute Force SSH</description>
 </rule>
 https://assets/wazuh-rule-brute-force-ssh.jpg
-
-Alerta disparado:
 https://assets/wazuh-alerta-600102-disparado.jpg
 
 2. SQL Injection (600103)
@@ -43,7 +41,6 @@ xml
   <url>union+|where+|null,null|xp_cmdshell</url>
   <description>Possivel SQL injection identified</description>
 </rule>
-Alerta disparado:
 https://assets/wazuh-alerta-600103-sql-injection.jpg
 
 3. IOC sqlmap (600104)
@@ -53,7 +50,6 @@ xml
   <match>sqlmap/1.7.10#stable</match>
   <description>IOC Detectado - UserAgent - Incidente XPT</description>
 </rule>
-Alerta disparado:
 https://assets/wazuh-alerta-600104-ioc-sqlmap.jpg
 
 4. IOC devops (600105)
@@ -63,7 +59,6 @@ xml
   <user>devops</user>
   <description>IOC Detectado - User devops - Incidente XPT</description>
 </rule>
-Alerta disparado:
 https://assets/wazuh-alerta-600105-ioc-devops.jpg
 
 ✅ Resumo
@@ -72,17 +67,3 @@ Regra	Descrição	Level	Funcionou?
 600103	SQL Injection	10	✅
 600104	IOC sqlmap	10	✅
 600105	IOC devops	7	✅
-Total de prints: 8
-
-📂 Anexos
-Todos os prints estão na pasta assets/.
-
-text
-
-## ✅ Correções feitas:
-
-- Adicionei ```xml nos blocos de código
-- Corrigi a indentação das tags XML
-- Coloquei `assets/` antes dos nomes das imagens
-- Organizei as seções com separadores
-- Arrumei a tabela de resumo
