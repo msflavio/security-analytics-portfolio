@@ -41,7 +41,7 @@ Acessar dashboard: https://<IP>:443 (usuário: admin, senha: SecretPassword)
 📋 Regras Customizadas Criadas
 Todas as regras foram adicionadas ao arquivo rules_custom.xml:
 
-https://assets/wazuh-regras-customizadas-4-regras.jpg
+![](![](assets/wazuh-regras-customizadas-4-regras.jpg))
 
 Regra 600102 - Força Bruta SSH
 xml
@@ -50,7 +50,7 @@ xml
   <same_srcip/>
   <description>Brute Force SSH</description>
 </rule>
-https://assets/wazuh-rule-brute-force-ssh.jpg
+![](![](assets/wazuh-rule-brute-force-ssh.jpg))
 
 Regra 600103 - SQL Injection
 xml
@@ -74,29 +74,29 @@ xml
   <user>devops</user>
   <description>IOC Detectado - User devops - Incidente XPT</description>
 </rule>
-https://assets/wazuh-regras-customizadas-duas.jpg
-https://assets/wazuh-regras-customizadas-completas.jpg
+![](![](assets/wazuh-regras-customizadas-duas.jpg))
+![](![](assets/wazuh-regras-customizadas-completas.jpg))
 
 🚨 Alertas Disparados
 1. Força Bruta SSH (600102)
 A regra detectou múltiplas tentativas de login SSH falhas:
 
-https://assets/wazuh-alerta-600102-disparado.jpg
+![](![](assets/wazuh-alerta-600102-disparado.jpg))
 
 2. SQL Injection (600103)
 Detecção de padrões de SQL Injection em logs web:
 
-https://assets/wazuh-alerta-600103-sql-injection.jpg
+![](![](assets/wazuh-alerta-600103-sql-injection.jpg))
 
 3. IOC sqlmap (600104)
 Detecção do User-Agent da ferramenta sqlmap:
 
-https://assets/wazuh-alerta-600104-ioc-sqlmap.jpg
+![](![](assets/wazuh-alerta-600104-ioc-sqlmap.jpg))
 
 4. IOC devops (600105)
 Detecção do usuário devops em logs SSH:
 
-https://assets/wazuh-alerta-600105-ioc-devops.jpg
+![](![](assets/wazuh-alerta-600105-ioc-devops.jpg))
 
 ✅ Resumo dos Resultados
 ID    Tipo    Descrição    Level    Status
@@ -147,3 +147,4 @@ Monitorar IOCs específicos (User-Agent e usuários)
 Gerar alertas em tempo real
 
 Total de prints no portfólio: 8
+
