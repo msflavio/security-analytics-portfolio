@@ -23,6 +23,7 @@ Todas as regras foram adicionadas no arquivo `rules_custom.xml`:
 ## 🔹 Regras e Alertas
 
 ### 1. Força Bruta SSH (600102)
+
 ```xml
 <rule id="600102" level="10" frequency="5" timeframe="120" ignore="60">
   <if_matched_sid>5710</if_matched_sid>
@@ -75,3 +76,13 @@ Total de prints: 8
 
 📂 Anexos
 Todos os prints estão na pasta assets/.
+
+text
+
+## ✅ Correções feitas:
+
+- Adicionei ```xml nos blocos de código
+- Corrigi a indentação das tags XML
+- Coloquei `assets/` antes dos nomes das imagens
+- Organizei as seções com separadores
+- Arrumei a tabela de resumo
