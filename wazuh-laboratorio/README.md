@@ -23,16 +23,16 @@ Todas as regras foram adicionadas no arquivo `rules_custom.xml`:
 ## 🔹 Regras e Alertas
 
 ### 1. Força Bruta SSH (600102)
-```xml
+
 <rule id="600102" level="10" frequency="5" timeframe="120" ignore="60">
   <if_matched_sid>5710</if_matched_sid>
   <same_srcip/>
   <description>Brute Force SSH</description>
 </rule>
-https://assets/wazuh-rule-brute-force-ssh.jpg
+![](wazuh-rule-brute-force-ssh.jpg)
 
 Alerta disparado:
-https://assets/wazuh-alerta-600102-disparado.jpg
+![](wazuh-alerta-600102-disparado.jpg)
 
 2. SQL Injection (600103)
 xml
@@ -43,7 +43,7 @@ xml
   <description>Possivel SQL injection identified</description>
 </rule>
 Alerta disparado:
-https://assets/wazuh-alerta-600103-sql-injection.jpg
+![](wazuh-alerta-600103-sql-injection.jpg)
 
 3. IOC sqlmap (600104)
 xml
@@ -53,7 +53,7 @@ xml
   <description>IOC Detectado - UserAgent - Incidente XPT</description>
 </rule>
 Alerta disparado:
-https://assets/wazuh-alerta-600104-ioc-sqlmap.jpg
+![](wazuh-alerta-600104-ioc-sqlmap.jpg)
 
 4. IOC devops (600105)
 xml
@@ -63,7 +63,7 @@ xml
   <description>IOC Detectado - User devops - Incidente XPT</description>
 </rule>
 Alerta disparado:
-https://assets/wazuh-alerta-600105-ioc-devops.jpg
+![](wazuh-alerta-600105-ioc-devops.jpg)
 
 ✅ Resumo
 Regra	Descrição	Level	Funcionou?
