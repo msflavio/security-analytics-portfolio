@@ -1,100 +1,81 @@
-# Security Analytics Portfolio
+﻿#  Security Analytics Portfolio
 
-Portfólio de projetos práticos focados em **Security Operations Center (SOC)**, análise de logs, engenharia de detecção e investigação de incidentes.
+**Autor:** Flávio Marçal  
+**LinkedIn:** [www.linkedin.com/in/msflavio](https://www.linkedin.com/in/msflavio)
 
-Os laboratórios simulam cenários reais de ataque utilizando **Splunk** e **Wazuh**.
-
----
-
-## 🔎 Incident Investigation
-
-### Ataque multifásico analisado em múltiplas fontes de log
-
-Investigação completa de um ataque envolvendo:
-
-* Port scanning
-* Malware execution
-* Privilege escalation
-* Command and Control (C2)
-* Data exfiltration
-
-### Fontes analisadas
-
-* Firewall
-* Proxy
-* Active Directory
-* DHCP
-* DNS
-* IDS
-* Antivírus
-* File Server
-
-📂 **Projeto**
-
-splunk-incident-investigation/investigacao-ataque-multiplas-fontes
+Portfólio de detecções de segurança baseado em análise de logs com Splunk e Wazuh.
 
 ---
 
-## 🛡️ Detection Engineering
+##  Projetos
 
-### Criação de alertas no SIEM
+###  Investigação de Ataque Multifásico
+**Pasta:** [investigacao-ataque-multiplas-fontes](investigacao-ataque-multiplas-fontes)
 
-Projeto focado em **engenharia de detecção no Splunk**, criando alertas baseados em comportamento suspeito.
+Análise completa de um ataque utilizando correlação de múltiplas fontes:
+- Firewall, Proxy, DHCP, Active Directory
+- Antivírus, DNS, IDS, File Server
+- Linha do tempo do ataque, IOCs e MITRE ATT&CK
 
-### Alertas implementados
-
-* SSH brute force
-* SQL injection
-* IOC detection
-* Correlation searches
-
-📂 **Projeto**
-
-splunk-detections/prevencao-alertas-pos-incidente
+** 16 prints**
 
 ---
 
-## 🧠 Wazuh Security Monitoring
+###  Alertas Pós-Incidente (Splunk)
+**Pasta:** [prevencao-alertas-pos-incidente](prevencao-alertas-pos-incidente)
 
-Espaço dedicado a projetos utilizando **Wazuh** para:
+Criação de alertas no Splunk baseados no incidente investigado:
+- Força bruta SSH
+- SQL Injection
+- IOCs (User-Agent sqlmap e usuário devops)
 
-* Host Intrusion Detection
-* File Integrity Monitoring
-* Custom detection rules
-* Threat detection
-
-📂 **Em desenvolvimento**
-
-wazuh-detections
+** 14 prints**
 
 ---
 
-## Habilidades Demonstradas
+###  Wazuh - Laboratório de Regras Customizadas
+**Pasta:** [wazuh-laboratorio](wazuh-laboratorio)
 
-* Log Analysis
-* Incident Investigation
-* Threat Detection
-* SIEM Engineering
-* MITRE ATT&CK Mapping
-* IOC Analysis
+Implementação de regras customizadas no Wazuh para detecção de ameaças:
+- Força bruta SSH (regra 600102)
+- SQL Injection (regra 600103)
+- IOC sqlmap (regra 600104)
+- IOC usuário devops (regra 600105)
 
----
-
-## Tecnologias
-
-* Splunk
-* Wazuh
-* Windows Event Logs
-* Sysmon
-* DNS Logs
-* Firewall Logs
-* Proxy Logs
+** 8 prints**
 
 ---
 
-## Autor
+##  Habilidades Demonstradas
 
-**Flávio Marçal**
+- Análise de Logs (Log Analysis)
+- Investigação de Incidentes (Incident Investigation)
+- Detecção de Ameaças (Threat Detection)
+- Engenharia de SIEM (SIEM Engineering)
+- Mapeamento MITRE ATT&CK
+- Análise de IOCs (IOC Analysis)
 
-LinkedIn
-[www.linkedin.com/in/msflavio](http://www.linkedin.com/in/msflavio)
+---
+
+##  Tecnologias Utilizadas
+
+- Splunk
+- Wazuh
+- Windows Event Logs
+- Sysmon
+- DNS Logs
+- Firewall Logs
+- Proxy Logs
+- Active Directory Logs
+
+---
+
+##  Estrutura do Portfólio
+security-analytics-portfolio/
+ investigacao-ataque-multiplas-fontes/ (16 prints)
+ prevencao-alertas-pos-incidente/ (14 prints)
+ wazuh-laboratorio/ (8 prints)
+
+text
+
+**Total de prints no portfólio: 38**
