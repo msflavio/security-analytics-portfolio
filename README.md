@@ -1,66 +1,81 @@
-Ôªø#  Security Analytics Portfolio
+# ??? Security Analytics Portfolio
 
-**Autor:** Fl√°vio Mar√ßal  
+**Autor:** Fl†vio Maráal  
 **LinkedIn:** [www.linkedin.com/in/msflavio](https://www.linkedin.com/in/msflavio)
 
-Portf√≥lio de detec√ß√µes de seguran√ßa baseado em an√°lise de logs com Splunk e Wazuh.
+Portf¢lio de detecá‰es de seguranáa baseado em an†lise de logs com Splunk, Wazuh e regras Sigma.
 
 ---
 
-##  Projetos
+## ?? Projetos
 
-###  Investiga√ß√£o de Ataque Multif√°sico
-**Pasta:** [investigacao-ataque-multiplas-fontes](investigacao-ataque-multiplas-fontes)
+### ?? Investigaá∆o de Ataque Multif†sico
+**Pasta:** [`investigacao-ataque-multiplas-fontes`](investigacao-ataque-multiplas-fontes)
 
-An√°lise completa de um ataque utilizando correla√ß√£o de m√∫ltiplas fontes:
+An†lise completa de um ataque utilizando correlaá∆o de m£ltiplas fontes:
 - Firewall, Proxy, DHCP, Active Directory
-- Antiv√≠rus, DNS, IDS, File Server
-- Linha do tempo do ataque, IOCs e MITRE ATT&CK
+- Antiv°rus, DNS, IDS, File Server
+- Linha do tempo do ataque, IOCs e MITRE ATT
 
-** 16 prints**
+**?? 16 prints**
 
 ---
 
-###  Alertas P√≥s-Incidente (Splunk)
-**Pasta:** [prevencao-alertas-pos-incidente](prevencao-alertas-pos-incidente)
+### ?? Alertas P¢s-Incidente (Splunk)
+**Pasta:** [`prevencao-alertas-pos-incidente`](prevencao-alertas-pos-incidente)
 
-Cria√ß√£o de alertas no Splunk baseados no incidente investigado:
-- For√ßa bruta SSH
+Criaá∆o de alertas no Splunk baseados no incidente investigado:
+- Foráa bruta SSH
 - SQL Injection
-- IOCs (User-Agent sqlmap e usu√°rio devops)
+- IOCs (User-Agent sqlmap e usu†rio devops)
 
-** 14 prints**
+**?? 14 prints**
 
 ---
 
-###  Wazuh - Laborat√≥rio de Regras Customizadas
-**Pasta:** [wazuh-laboratorio](wazuh-laboratorio)
+### ?? Wazuh - Laborat¢rio de Regras Customizadas
+**Pasta:** [`wazuh-laboratorio`](wazuh-laboratorio)
 
-Implementa√ß√£o de regras customizadas no Wazuh para detec√ß√£o de amea√ßas:
-- For√ßa bruta SSH (regra 600102)
+Implementaá∆o de regras customizadas no Wazuh para detecá∆o de ameaáas:
+- Foráa bruta SSH (regra 600102)
 - SQL Injection (regra 600103)
 - IOC sqlmap (regra 600104)
-- IOC usu√°rio devops (regra 600105)
+- IOC usu†rio devops (regra 600105)
 
-** 8 prints**
+**?? 8 prints**
 
 ---
 
-##  Habilidades Demonstradas
+### ?? Sigma Rules - Convers∆o de Regras
+**Pasta:** [`sigma-rules-conversao`](sigma-rules-conversao)
 
-- An√°lise de Logs (Log Analysis)
-- Investiga√ß√£o de Incidentes (Incident Investigation)
-- Detec√ß√£o de Amea√ßas (Threat Detection)
+Criaá∆o e convers∆o de regras no formato universal Sigma:
+- 5 regras desenvolvidas (SSH, SQL Injection, IOCs, Correlaá∆o)
+- Convers‰es para Splunk
+- Regras de correlaá∆o com timespan
+
+**?? 5 prints**
+
+---
+
+## ??? Habilidades Demonstradas
+
+- An†lise de Logs (Log Analysis)
+- Investigaá∆o de Incidentes (Incident Investigation)
+- Detecá∆o de Ameaáas (Threat Detection)
 - Engenharia de SIEM (SIEM Engineering)
-- Mapeamento MITRE ATT&CK
-- An√°lise de IOCs (IOC Analysis)
+- Mapeamento MITRE ATT
+- An†lise de IOCs (IOC Analysis)
+- Regras Sigma (Sigma Rules)
+- Correlaá∆o de Eventos
 
 ---
 
-##  Tecnologias Utilizadas
+## ?? Tecnologias Utilizadas
 
 - Splunk
 - Wazuh
+- Sigma Rules
 - Windows Event Logs
 - Sysmon
 - DNS Logs
@@ -70,12 +85,14 @@ Implementa√ß√£o de regras customizadas no Wazuh para detec√ß√£o de amea√ßas:
 
 ---
 
-##  Estrutura do Portf√≥lio
+## ?? Estrutura do Portf¢lio
+
+`````
 security-analytics-portfolio/
- investigacao-ataque-multiplas-fontes/ (16 prints)
- prevencao-alertas-pos-incidente/ (14 prints)
- wazuh-laboratorio/ (8 prints)
+√ƒƒ investigacao-ataque-multiplas-fontes/  (16 prints)
+√ƒƒ prevencao-alertas-pos-incidente/       (14 prints)
+√ƒƒ wazuh-laboratorio/                      (8 prints)
+¿ƒƒ sigma-rules-conversao/                  (5 prints)
+`````
 
-text
-
-**Total de prints no portf√≥lio: 38**
+**Total de prints no portf¢lio: 43**
