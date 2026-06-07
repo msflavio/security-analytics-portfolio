@@ -1,97 +1,73 @@
-﻿# 🛡️ Security Analytics Portfolio
+﻿# 🛡️ Security Analytics & Detection Engineering Portfolio
 
 **Autor:** Flávio Marçal  
 **LinkedIn:** [www.linkedin.com/in/msflavio](https://www.linkedin.com/in/msflavio)
 
-Portfólio de detecções de segurança baseado em análise de logs com Splunk, Wazuh e regras Sigma.
+Bem-vindo ao meu portfólio de Engenharia de Detecção e Análise de Segurança. Este repositório reúne projetos práticos focados em análise forense de logs, correlação de eventos em SIEM (Splunk), monitoramento de endpoints (Wazuh) e desenvolvimento de regras de detecção universais utilizando o framework Sigma.
 
 ---
 
-## 📊 Projetos
+## 🎯 Cenário Resumido dos Projetos
+Os projetos simulam um ambiente corporativo sob um ataque multifásico. O objetivo foi rastrear a atividade maliciosa desde o vetor inicial de acesso até as ações nos objetivos, desdobrando a investigação em alertas de produção e inteligência de ameaças.
 
-### 🔥 Investigação de Ataque Multifásico
-**Pasta:** [investigacao-ataque-multiplas-fontes](investigacao-ataque-multiplas-fontes)
-
-Análise completa de um ataque utilizando correlação de múltiplas fontes:
-- Firewall, Proxy, DHCP, Active Directory
-- Antivírus, DNS, IDS, File Server
-- Linha do tempo do ataque, IOCs e MITRE ATT&CK
-
-**📸 16 prints**
+### 🗺️ Mapeamento MITRE ATT&CK Coberto:
+* **Initial Access:** T1190 - Exploit Public-Facing Application (SQL Injection)
+* **Credential Access:** T1110 - Brute Force (SSH Brute Force)
+* **Command and Control:** T1571 - Non-Standard Port / User-Agent maliciosos (sqlmap)
 
 ---
 
-### ⚠️ Alertas Pós-Incidente (Splunk)
-**Pasta:** [prevencao-alertas-pos-incidente](prevencao-alertas-pos-incidente)
+## 📊 Projetos e Estrutura
 
-Criação de alertas no Splunk baseados no incidente investigado:
-- Força bruta SSH
-- SQL Injection
-- IOCs (User-Agent sqlmap e usuário devops)
+### 🔬 1. Investigação de Ataque Multifásico (Múltiplas Fontes)
+**Pasta:** [`investigacao-ataque-multiplas-fontes`](investigacao-ataque-multiplas-fontes)
+Análise forense e reconstrução da linha do tempo de um incidente complexo através da correlação de logs de diferentes camadas da infraestrutura.
+* **Fontes de Logs Analisadas:** Firewall, Proxy, DHCP, Active Directory, Antivírus, DNS, IDS e File Server.
+* **Entregáveis:** Linha do tempo detalhada do ataque, identificação de Indicadores de Comprometimento (IOCs) e contenção lógica.
+* **Evidências:** 📸 16 prints documentando o passo a passo da investigação.
 
-**📸 14 prints**
+### 🔥 2. Engenharia de Detecção no Splunk (Alertas Pós-Incidente)
+**Pasta:** [`prevencao-alertas-pos-incidente`](prevencao-alertas-pos-incidente)
+Transformação dos achados da investigação em regras de detecção contínua dentro do Splunk (SPL), visando mitigar futuros ataques similares.
+* **Casos de Uso Implementados:** * Detecção de força bruta SSH por volumetria.
+  * Identificação de padrões de injeção SQL em logs de aplicação.
+  * Alertas em tempo real para IOCs específicos (User-Agent `sqlmap` e criação do usuário anômalo `devops`).
+* **Evidências:** 📸 14 prints das queries SPL e painéis de alertas.
 
----
+### 🐺 3. Wazuh - Regras Customizadas e Monitoramento de Endpoints
+**Pasta:** [`wazuh-laboratorio`](wazuh-laboratorio)
+Configuração do Wazuh (EDR/XDR) para detecção a nível de host/endpoint, criando decoders e regras customizadas.
+* **Regras Desenvolvidas:**
+  * `600102` - SSH Brute Force Detection
+  * `600103` - SQL Injection Attempt via Web Logs
+  * `600104` - Malicious User-Agent Detection (sqlmap)
+  * `600105` - Unauthorized User Creation (`devops`)
+* **Evidências:** 📸 8 prints do laboratório e disparo dos alertas no painel do Wazuh.
 
-### 🐺 Wazuh - Laboratório de Regras Customizadas
-**Pasta:** [wazuh-laboratorio](wazuh-laboratorio)
-
-Implementação de regras customizadas no Wazuh para detecção de ameaças:
-- Força bruta SSH (regra 600102)
-- SQL Injection (regra 600103)
-- IOC sqlmap (regra 600104)
-- IOC usuário devops (regra 600105)
-
-**📸 8 prints**
-
----
-
-### 📜 Sigma Rules - Conversão de Regras
-**Pasta:** [sigma-rules-conversao](sigma-rules-conversao)
-
-Criação e conversão de regras no formato universal Sigma:
-- 5 regras desenvolvidas (SSH, SQL Injection, IOCs, Correlação)
-- Conversões para Splunk
-- Regras de correlação com timespan
-
-**📸 5 prints**
-
----
-
-## 🛠️ Habilidades Demonstradas
-
-- Análise de Logs (Log Analysis)
-- Investigação de Incidentes (Incident Investigation)
-- Detecção de Ameaças (Threat Detection)
-- Engenharia de SIEM (SIEM Engineering)
-- Mapeamento MITRE ATT&CK
-- Análise de IOCs (IOC Analysis)
-- Regras Sigma (Sigma Rules)
-- Correlação de Eventos
+### 📜 4. Sigma Rules - Detecção como Código (Detection as Code)
+**Pasta:** [`sigma-rules-conversao`](sigma-rules-conversao)
+Padronização das detecções utilizando o formato universal Sigma, permitindo que as regras criadas sejam portáveis para qualquer SIEM do mercado.
+* **Desenvolvimento:** 5 regras completas em formato YAML escritas do zero.
+* **Conversão:** Demonstração prática da tradução automatizada das regras Sigma para sintaxe nativa do Splunk.
+* **Diferencial:** Implementação de regras de correlação avançadas utilizando janelas de tempo (*timespan*).
+* **Evidências:** 📸 5 prints dos arquivos e validação na ferramenta de conversão.
 
 ---
 
-## 💻 Tecnologias Utilizadas
+## 🛠️ Hard Skills Demonstradas
 
-- Splunk
-- Wazuh
-- Sigma Rules
-- Windows Event Logs
-- Sysmon
-- DNS Logs
-- Firewall Logs
-- Proxy Logs
-- Active Directory Logs
+* **SIEM & Analytics:** Splunk (SPL Query Optimization, Alerting).
+* **XDR/EDR:** Wazuh (Custom Rules Development, Log Decoding).
+* **Detection as Code:** Regras Sigma (YAML, Sigma CLI/Uncoder).
+* **Análise Forense:** Triagem e correlação de Windows Event Logs, Sysmon, DNS, Firewalls e Proxies.
+* **Threat Intelligence:** Extração, categorização e bloqueio de IOCs.
 
 ---
 
-## 📁 Estrutura do Portfólio
+## 📁 Estrutura do Repositório
+```text
 security-analytics-portfolio/
-├── investigacao-ataque-multiplas-fontes/ (16 prints)
-├── prevencao-alertas-pos-incidente/ (14 prints)
-├── wazuh-laboratorio/ (8 prints)
-└── sigma-rules-conversao/ (5 prints)
-
-text
-
-**Total de prints no portfólio: 43**
+├── investigacao-ataque-multiplas-fontes/   # Análise forense & timeline
+├── prevencao-alertas-pos-incidente/         # Queries SPL e alertas Splunk
+├── wazuh-laboratorio/                       # Arquivos XML de regras do Wazuh
+└── sigma-rules-conversao/                   # Regras .yml Sigma e traduções
