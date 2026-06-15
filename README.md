@@ -49,7 +49,7 @@ Configuração do Wazuh (EDR/XDR) para detecção a nível de host/endpoint, cri
 Padronização das detecções utilizando o formato universal Sigma, permitindo que as regras criadas sejam portáveis para qualquer SIEM do mercado.
 * **Desenvolvimento:** 5 regras completas em formato YAML escritas do zero.
 * **Conversão:** Demonstração prática da tradução automatizada das regras Sigma para sintaxe nativa do Splunk.
-* **Diferencial:** Implementação de regras de correlação avançadas utilizando janelas de tempo (*timespan*).
+* **Diferencial:** Implementation de regras de correlação avançadas utilizando janelas de tempo (*timespan*).
 * **Evidências:** 📸 5 prints dos arquivos e validação na ferramenta de conversão.
 
 ---
@@ -64,9 +64,24 @@ Padronização das detecções utilizando o formato universal Sigma, permitindo 
 
 ---
 
+## 📁 Projetos de Governança, Risco e Conformidade (GRC)
+
+Além da engenharia de detecção ativa, também desenvolvo análises estratégicas voltadas para a maturidade de segurança corporativa e conformidade regulatória.
+
+### 🏢 Avaliação de Riscos e Auditoria baseada no NIST CSF — Botium Toys
+Realizei uma auditoria completa na infraestrutura de uma empresa de e-commerce para identificar lacunas críticas de segurança frente às normas internacionais **PCI DSS** e **RGPD**.
+
+* **Risco Crítico:** Ausência de criptografia em dados de cartões de crédito armazenados localmente e falta de controle de acesso (Princípio do Menor Privilégio).
+* **Pontuação de Risco Organizacional:** 8 / 10 (Alto Risco).
+
+👉 [**Clique aqui para acessar a pasta com o Relatório Detalhado e Anexos Técnicos deste projeto**](./01-auditoria-botium-toys/)
+
+---
+
 ## 📁 Estrutura do Repositório
 ```text
 security-analytics-portfolio/
+├── 01-auditoria-botium-toys/             # Relatório GRC e PDFs de conformidade
 ├── investigacao-ataque-multiplas-fontes/   # Análise forense & timeline
 ├── prevencao-alertas-pos-incidente/         # Queries SPL e alertas Splunk
 ├── wazuh-laboratorio/                       # Arquivos XML de regras do Wazuh
