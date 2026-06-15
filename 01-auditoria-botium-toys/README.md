@@ -28,38 +28,22 @@ O objetivo desta avaliação foi mapear os ativos da organização, preencher um
 
 
 
-\## 📊 Lista de Verificação de Controles (Gap Analysis)
-
-
+## 📊 Lista de Verificação de Controles (Gap Analysis)
 
 Abaixo está o diagnóstico detalhado dos controles de segurança inspecionados, classificando-os entre ativos (Sim) ou ausentes (Não) na infraestrutura atual da empresa:
 
-
-
 | Controle de Segurança | Implementado? | Diagnóstico Técnico / Impacto no Negócio |
-
 | :--- | :---: | :--- |
-
-| \*\*Princípio do Menor Privilégio\*\* | ❌ Não | Todos os funcionários possuem acesso irrestrito aos dados internos, incluindo dados de cartões de crédito e informações pessoais (PII) de clientes. |
-
-| \*\*Criptografia de Dados\*\* | ❌ Não | Dados financeiros e informações de cartões de crédito são aceitos e armazenados localmente sem qualquer tipo de criptografia, violando o PCI DSS. |
-
-| \*\*Plano de Recuperação de Desastres (DRP)\*\* | ❌ Não | Não existem planos de continuidade de negócios ou rotinas de backup para dados críticos implementados. |
-
-| \*\*Segregação de Funções\*\* | ❌ Não | Controles de acesso inadequados. O CEO centraliza tanto as operações diárias quanto o gerenciamento da folha de pagamento, gerando risco de fraude. |
-
-| \*\*Firewall de Borda\*\* |  Sim | O departamento de TI possui um firewall ativo que bloqueia o tráfego de rede com base em regras de segurança adequadamente definidas. |
-
-| \*\*Sistema de Detecção de Intrusão (IDS)\*\* | ❌ Não | A rede interna não possui um IDS instalado, limitando a capacidade de identificar intrusões ou anomalias em tempo real. |
-
-| \*\*Software Antivírus\*\* |  Sim | Proteção de endpoint ativa, instalada e monitorada regularmente nas estações de trabalho dos funcionários. |
-
-| \*\*Política e Complexidade de Senhas\*\* | ❌ Não | Os requisitos de senhas são nominais/mínimos e não forçam critérios modernos de complexidade (como caracteres especiais e tamanho seguro). |
-
-| \*\*Gerenciamento Centralizado de Senhas\*\* | ❌ Não | Ausência de um cofre ou gerenciador centralizado, afetando a produtividade da equipe de TI com chamados frequentes para redefinições de credenciais. |
-
-| \*\*Segurança Física (CFTV e Trancas)\*\* |  Sim | As instalações físicas (loja, escritórios e depósito) possuem fechaduras suficientes, sistema de videovigilância por CFTV ativo e prevenção de incêndios operacional. |
-
+| **Princípio do Menor Privilégio** | ❌ Não | Todos os funcionários possuem acesso irrestrito aos dados internos, incluindo dados de cartões de crédito e informações pessoais (PII) de clientes. |
+| **Criptografia de Dados** | ❌ Não | Dados financeiros e informações de cartões de crédito são aceitos e armazenados localmente sem qualquer tipo de criptografia, violando o PCI DSS. |
+| **Plano de Recuperação de Desastres (DRP)** | ❌ Não | Não existem planos de continuidade de negócios ou rotinas de backup para dados críticos implementados. |
+| **Segregação de Funções** | ❌ Não | Controles de acesso inadequados. O CEO centraliza tanto as operações diárias quanto o gerenciamento da folha de pagamento, gerando risco de fraude. |
+| **Firewall de Borda** | Sim | O departamento de TI possui um firewall ativo que bloqueia o tráfego de rede com base em regras de segurança adequadamente definidas. |
+| **Sistema de Detecção de Intrusão (IDS)** | ❌ Não | A rede interna não possui um IDS instalado, limitando a capacidade de identificar intrusões ou anomalias em tempo real. |
+| **Software Antivírus** | Sim | Proteção de endpoint activa, instalada e monitorada regularmente nas estações de trabalho dos funcionários. |
+| **Política e Complexidade de Senhas** | ❌ Não | Os requisitos de senhas são nominais/mínimos e não forçam critérios modernos de complexidade (como caracteres especiais e tamanho seguro). |
+| **Gerenciamento Centralizado de Senhas** | ❌ Não | Ausência de um cofre ou gerenciador centralizado, afetando a produtividade da equipe de TI com chamados frequentes para redefinições de credenciais. |
+| **Segurança Física (CFTV e Trancas)** | Sim | As instalações físicas (loja, escritórios e depósito) possuem fechaduras suficientes, sistema de videovigilância por CFTV ativo e prevenção de incêndios operacional. |
 
 
 \---
